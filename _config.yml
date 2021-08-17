@@ -10,7 +10,7 @@ show_excerpts: true # set to true to show excerpts on the homepage
 sass:
   sass_dir: _sass
 plainwhite:
-  name: Adam Denisov
+  name: MIng
   tagline: Developer. Designer
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
@@ -25,6 +25,7 @@ plainwhite:
   # generate social links in footer
   social_links:
     github: Jmingxiao
+    email: Mingxiao_o719@outlook.com
     #twitter: no_twitters
     #dribbble: jekyll
     #flickr:   jekyll
@@ -35,7 +36,6 @@ plainwhite:
     #soundcloud: jekyll
     #telegram: jekyll
     #gitlab: jekyll
-    #email: jekyll
 
     # Mastodon instances
     # mastodon:
