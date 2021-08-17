@@ -1,1 +1,3 @@
-# Test Blog 
+---
+layout: home
+---
