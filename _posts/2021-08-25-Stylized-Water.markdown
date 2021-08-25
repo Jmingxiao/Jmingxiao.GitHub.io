@@ -36,7 +36,7 @@ private static void CalculateReflectionMatrix(ref Matrix4x4reflectionMat, Vector
 }
 ```
 Or you could also try to use the Screen space reflection technic.  
-*****
+- - - 
 ## Water Color 
 For the water Color I use a little trick to simulate the water color from shallow to depth.   
 ```c
