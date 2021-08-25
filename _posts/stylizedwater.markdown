@@ -1,10 +1,13 @@
 ---
 layout: post
 title:  "Stylized Water"
-date:   2021-08-24 00:00:00 +0530
+date:   2021-08-25 17:00:00 +0530
 categories: Unity Shader
 ---
+
 ## Introduction
+This is a custom stylized water I created month ago. It contains technic of depthdifference reflections refractions normals, and so on.  
+  
 Before I create this water shader, I have tried to work on different water materials from unity assets store and other resources. The most convincing one is from [Catlike Coding][catlike-coding].  
 With all those reference I've found. I separate the full water shader into different parts.
 ***
@@ -33,7 +36,7 @@ private static void CalculateReflectionMatrix(ref Matrix4x4reflectionMat, Vector
     reflectionMat.m33 = 1F;
 }
 ```
-Or you could also try to use the Screen space reflection technic.
+Or you could also try to use the Screen space reflection technic.  
 ***
 ## Water Color 
 For the water Color I use a little trick to simulate the water color from shallow to depth.   
