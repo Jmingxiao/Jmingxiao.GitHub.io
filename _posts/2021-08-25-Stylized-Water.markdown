@@ -59,7 +59,7 @@ float foamDiff = saturate((depth - IN.screenPos.w) / _FoamThreshold);
 float foamTex = tex2D(_FoamTexture, IN.worldPos.xz * _FoamTexture_ST.xy + _Time.y * float2(_FoamTextureSpeedX, _FoamTextureSpeedY));
 float foam = step(foamDiff - (saturate(sin((foamDiff - _Time.y * _FoamLinesSpeed) * 8 * UNITY_PI)) * (1.0 - foamDiff)), foamTex);
 ```
-***
+- - - 
 ## Water Normal
 I mixed the water normal use one normal map scrolling in different directions. I blend the those two normals use an different ratio so that they looks more realistic
 ```c
@@ -87,8 +87,9 @@ normal = normal_strength_float(normal,_BumpStrength);
 float strength1 = saturate(IN.worldNormal.g+0.75);
 normal = normal_strength_float(normal,strength1);
 ```
-***
-## Properties
+- - - 
+## Properties  
+
 | Name  |Description|
 | ----  |   ----    |   
 | _DepthColor | water depth color|
@@ -106,7 +107,7 @@ normal = normal_strength_float(normal,strength1);
 | _FoamTextureSpeedY | the foam scroll speed y direction|
 | _FoamLinesSpeed | foam line speed|
 
-***
+- - -
 ## I am tired so I can hardly keep on 
 later caustics and refractions and vertex wave
 
@@ -119,6 +120,10 @@ stylized water with normal
 [catlike-coding]: https://catlikecoding.com/unity/tutorials/flow/looking-through-water/
 
 ## test
+
+
+
+
 <table>
 <colgroup>
 <col width="30%" />
@@ -133,12 +138,48 @@ stylized water with normal
 <tbody>
 <tr>
 <td markdown="span">_DepthColor</td>
-<td markdown="span"> water depth color.</td>
+<td markdown="span"> water depth color</td>
 </tr>
 <tr>
-<td markdown="span">Second column fields</td>
-<td markdown="span">Some more descriptive text.
-</td>
+<td markdown="span">_ShallowColor</td>
+<td markdown="span">water shallow color</td>
+</tr>
+<td markdown="span">_FoamThreshold</td>
+<td markdown="span"> the foam size limits</td>
+</tr>
+<td markdown="span">_WaterDepth</td>
+<td markdown="span"> the water depth level</td>
+</tr>
+<td markdown="span">_NormalMap</td>
+<td markdown="span">the normal map</td>
+</tr>
+<td markdown="span">_UVScale</td>
+<td markdown="span">the uv scale of the normal map</td>
+</tr>
+<td markdown="span">_DetailScale</td>
+<td markdown="span">the blend ratio between detailed normal map</td>
+</tr>
+<td markdown="span">_ScrollSpeed</td>
+<td markdown="span"> the normal scroll speed</td>
+</tr>
+<td markdown="span">_DetailStrength</td>
+<td markdown="span">the normal strength of lower normal</td>
+</tr>
+<td markdown="span">_BumpStrength</td>
+<td markdown="span">the bumping strength of higher normal</td>
+</tr>
+<td markdown="span">_FoamTexture</td>
+<td markdown="span"> the foam texture</td>
+</tr>
+<td markdown="span">_FoamTextureSpeedX</td>
+<td markdown="span">the foam scroll speed x direction</td>
+</tr>
+<td markdown="span">_FoamTextureSpeedY</td>
+<td markdown="span">the foam scroll speed y direction</td>
+</tr>
+<td markdown="span">_FoamLinesSpeed</td>
+<td markdown="span"> foam line speed</td>
 </tr>
 </tbody>
 </table> 
+
