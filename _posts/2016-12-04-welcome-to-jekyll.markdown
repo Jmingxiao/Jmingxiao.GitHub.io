@@ -7,7 +7,7 @@ categories: Unity Shader
 
 ## Introduction
 This is a custom stylized water I created month ago. It contains technic of depthdifference reflections refractions normals, and so on.  
-  
+
 Before I create this water shader, I have tried to work on different water materials from unity assets store and other resources. The most convincing one is from [Catlike Coding][catlike-coding].  
 With all those reference I've found. I separate the full water shader into different parts.
 ***
