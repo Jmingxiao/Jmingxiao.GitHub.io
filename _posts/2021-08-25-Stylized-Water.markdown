@@ -4,13 +4,12 @@ title:  "Stylized Water"
 date:   2021-08-25 17:00:00 +0530
 categories: Unity Shader
 ---
-
 ## Introduction
 This is a custom stylized water I created month ago. It contains technic of depthdifference reflections refractions normals, and so on.  
 
 Before I create this water shader, I have tried to work on different water materials from unity assets store and other resources. The most convincing one is from [Catlike Coding][catlike-coding].  
 With all those reference I've found. I separate the full water shader into different parts.
-***
+- - -
 ## Water Reflection  
 The reflection is basically another perspective camera under the water and the position is xmain,ywater-(Ymain - ywater),zmain; and the eular rotation is -x,y,z.  
 This code took the reference of the unity demo Boat Attack.  
@@ -37,7 +36,7 @@ private static void CalculateReflectionMatrix(ref Matrix4x4reflectionMat, Vector
 }
 ```
 Or you could also try to use the Screen space reflection technic.  
-***
+*****
 ## Water Color 
 For the water Color I use a little trick to simulate the water color from shallow to depth.   
 ```c
@@ -113,8 +112,8 @@ later caustics and refractions and vertex wave
 
 ## Stylized water without normal (preview)
 stylized water without normal
-![Stylized water](./water/stylized_water.png)
+![Stylized water](/assets/waterimg/stylized_water.png)
 stylized water with normal 
-![Stylized water with normal](./water/water_withnormal.png)
+![Stylized water with normal](/assets/waterimg/water_withnormal.png)
 
 [catlike-coding]: https://catlikecoding.com/unity/tutorials/flow/looking-through-water/
