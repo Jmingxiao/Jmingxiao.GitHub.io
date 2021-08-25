@@ -4,7 +4,9 @@ title:  "About me"
 date:   2021-08-25 16:16:00 +0800
 categories: MIng
 ---
-## Intro
+
+
+## Introduction
 some things about me.  
 
 A student from Uppsala University Game design & programming third year.  
