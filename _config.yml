@@ -1,57 +1,69 @@
-title:  Ming's Blog
-author: Ming
-email: Mingxiao_o719@outlook.com
-description: > # this means to ignore newlines until "show_exerpts:"
-   This is a small site post some of ming's stuff: learnigs and exprs. Mainly focusing on computer graphics
-show_excerpts: true # set to true to show excerpts on the homepage
+# Site Settings
+baseurl: "/Grape-Academic-Theme"
 
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+# Blog Setting
+blog: True
+
+# Language of the website
+lang: en
+
+# Search engine optimization settings
+title: Grape Academic Theme
+tagline: A jekyll theme for academic portfolios
+description: The demonstration page for the Grape Academic Theme, a jekyll theme for academic portfolios based on the Grape Theme.
+author: Christoph Jabs (chrjabs)
+twitter:
+  username: chrjabs
+  card: A jekyll theme for academic portfolios
+logo: /assets/img/smile.png
+social:
+  name: Christoph Jabs
+  links:
+    - https://twitter.com/chrjabs
+    - https://github.com/chrjabs
+locale: en_GB
+
+# Page Settings
+theme_settings:
+  title: Grape Academic Theme
+
+  experience_title: EXPERIENCE
+  interests_title: RESEARCH INTERESTS
+  skills_title: SKILLS
+  projects_title: PROJECTS
+  recentpubs_title: RECENT PUBLICATIONS
+
+# Pagination
+paginate: 5
+paginate_path: "blog/page:num"
+
+# Build Settings
 sass:
   sass_dir: _sass
-plainwhite:
-  name: MIng
-  tagline: Game Developer
-  date_format: "%b %-d, %Y"
-  sitemap: true # set to true to generate sitemap.xml content
-  search: true # set to true to enable searchbar
-  dark_mode: true # set to true to add dark mode toggle
-  portfolio_image: "assets/portfolio.png" # the path from the base directory of the site to the image to display (no / at the start)
-  html_lang: "en" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
-  condensed_mobile:
-    #- home
-    - page
-    - post
-  # generate social links in footer
-  social_links:
-    github: Jmingxiao
-    email: Mingxiao_o719@outlook.com
-    #twitter: no_twitters
-    #dribbble: jekyll
-    #flickr:   jekyll
-    #instagram: jekyll
-    #pinterest: jekyll
-    #youtube: jekyll
-    #facebook: jekyll
-    #soundcloud: jekyll
-    #telegram: jekyll
-    #gitlab: jekyll
+  style: :compressed
+plugins: ['jekyll-paginate', 'jekyll/scholar', 'jekyll-seo-tag']
+bootstrap:
+  assets: true
 
-    # Mastodon instances
-    # mastodon:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
+# Bibliography settings
+scholar:
+  bibliography: publications.bib
+  bibliography_template: pubstemplate
+  style: apa
+  locale: en
+  last_name: Me
+  first_name: [Myself, M.]
+  sort_by: year,month
+  order: descending,ascending
 
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
+filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website] # Filter out certain bibtex entry keywords used internally from the bib output
 
-# Build settings
-theme: plainwhite
-
-plugins:
-  - jekyll-seo-tag
-  - jekyll-feed
+academicons:
+  version: "1.9.1"
+  integrity: "sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg="
+fontawesome:
+  version: "5.15.4"
+  integrity: "sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4="
+jquery:
+  version: "3.6.0"
+  integrity: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
