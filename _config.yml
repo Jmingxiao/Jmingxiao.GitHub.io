@@ -1,69 +1,219 @@
-# Site Settings
-baseurl: "/Grape-Academic-Theme"
+# Welcome to Jekyll!
+#
+# About Theme
+#
+# Yet another theme for elegant writers with modern flat style and beautiful
+# night/dark mode.
+#
+# Website: https://github.com/jeffreytse/jekyll-theme-yat
+#
+# You can do anything you want, including projects for your clients, as long
+# as you mention an attribution back (credit links in footer or project).
+# See the LICENCE file.
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you
+# use 'bundle exec jekyll serve'. If you change this file, please restart
+# the server process.
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 
-# Blog Setting
-blog: True
+title: Your awesome title
+email: your-email@domain.com
+author: GitHub User
 
-# Language of the website
-lang: en
+# Copyright setting
+# You can use any html code, currently below placeholders are available:
+# * current year: {currentYear}
+# * author: {author} (Value is the same as site.author)
+# * copyright: (c) - ©
+# * copyleft: (cleft)
+# * sound recording copyright: (p) - ℗
+#
+# For example:
+#   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
+#   "Copyright © 2017-2021 Foobar"
+#
+copyright: "Unpublished Work (cleft) 2017-{currentYear} {author}"
 
-# Search engine optimization settings
-title: Grape Academic Theme
-tagline: A jekyll theme for academic portfolios
-description: The demonstration page for the Grape Academic Theme, a jekyll theme for academic portfolios based on the Grape Theme.
-author: Christoph Jabs (chrjabs)
-twitter:
-  username: chrjabs
-  card: A jekyll theme for academic portfolios
-logo: /assets/img/smile.png
-social:
-  name: Christoph Jabs
-  links:
-    - https://twitter.com/chrjabs
-    - https://github.com/chrjabs
-locale: en_GB
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 
-# Page Settings
-theme_settings:
-  title: Grape Academic Theme
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. https://example.com
+favicon: "" # the favicon for your site
 
-  experience_title: EXPERIENCE
-  interests_title: RESEARCH INTERESTS
-  skills_title: SKILLS
-  projects_title: PROJECTS
-  recentpubs_title: RECENT PUBLICATIONS
+# Yat date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+yat:
+  date_format: "%b %d, %Y"
 
-# Pagination
-paginate: 5
-paginate_path: "blog/page:num"
+# If you want more debug log, you can set true
+# debug: false
 
-# Build Settings
-sass:
-  sass_dir: _sass
-  style: :compressed
-plugins: ['jekyll-paginate', 'jekyll/scholar', 'jekyll-seo-tag']
-bootstrap:
-  assets: true
+# If you don't want transparent header, you can set false
+# header_transparent: true
 
-# Bibliography settings
-scholar:
-  bibliography: publications.bib
-  bibliography_template: pubstemplate
-  style: apa
-  locale: en
-  last_name: Me
-  first_name: [Myself, M.]
-  sort_by: year,month
-  order: descending,ascending
+# If you want to change the content width, you can set to another value
+# content_width: "920px"
 
-filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website] # Filter out certain bibtex entry keywords used internally from the bib output
+# Google analytics
+# google_analytics: [Tracking ID]
 
-academicons:
-  version: "1.9.1"
-  integrity: "sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg="
-fontawesome:
-  version: "5.15.4"
-  integrity: "sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4="
-jquery:
-  version: "3.6.0"
-  integrity: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+# If you want to generate website sitemap, you can set true
+# sitemap: false
+
+# If you want to change site language, you can set lang option
+# lang: "en"  # default lang is en
+
+# Translate languges
+# langs refer to https://cloud.google.com/translate/docs/languages
+# translate_langs:
+#   - lang: en
+#     img: https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png
+#     text: English
+#
+#   - lang: fr
+#     img: https://cdn.countryflags.com/thumbs/france/flag-400.png
+#     text: French
+#
+#   - lang: zh-CN
+#     img: https://cdn.countryflags.com/thumbs/china/flag-400.png
+#     text: Chinese(Simple)
+#
+#   - lang: ja
+#     img: https://cdn.countryflags.com/thumbs/japan/flag-400.png
+#     text: Japanese
+#
+#   - lang: ko
+#     img: https://cdn.countryflags.com/thumbs/south-korea/flag-400.png
+#     text: Korean
+#
+#   - lang: ru
+#     img: https://cdn.countryflags.com/thumbs/russia/flag-400.png
+#     text: Russian
+
+# You can choose a theme color
+# Default theme colors as below:
+# coolblack: #090a0b
+# spacegrey: #353535
+# snowwhite: #ffffff
+#
+# theme_color: snowwhite
+#
+# Custom color as below:
+# theme_color: "#882250"
+
+# You can choose a brand color
+# Default brand colors as below:
+# orangered: #ff5100
+# greatgold: #f2cb05
+# greenblue: #389092
+#
+# brand_color: orangered
+#
+# Custom color as below:
+# brand_color: "#1a8e42"
+
+# Night/Dark mode
+# Default mode is "auto", "auto" is for auto nightshift
+# (19:00 - 07:00), "manual" is for manual toggle, and
+# "on/off" is for default on/off.
+#
+# Whatever the user's choice is, it will supersede the
+# default setting of the site and be kept during the
+# visit (session). Only the dark mode setting is"manual",
+# it will be always kept on every visit (i.e. no matter
+# the browser is closed or not)
+#
+# night_mode: "auto"
+
+# Code badge setting
+# You can enable or disable the code badge and so on
+# code_badge:
+#   enabled: "true"
+#   color: "#fff"
+#   background_color: "#ff4e00"
+#   text_transform: "uppercase"  # ("uppercase", "lowercase", "capitalize")
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+# header_pages:
+#   - index.html
+#   - archives.html
+#   - categories.html
+#   - tags.html
+#   - about.md
+
+# Page default value
+# defaults:
+#   home:
+#     heading: "Your awesome heading"
+#     subheading: "Your awesome subheading"
+#     banner: "Your image url"
+
+# Banner default settings
+# These banner settings are for global banner default, but you can also
+# config it by the front matter for one specific post
+# banner:
+#   video: null             # Video banner source
+#   loop: true              # Video loop
+#   volume: 0               # Video volume (100% is 1.0)
+#   start_at: 0             # Video start time
+#   image: null             # Image banner source
+#   opacity: 1.0            # Banner opacity (100% is 1.0)
+#   background: "rgba(0, 0, 0, 0.8)"  # Banner background (Could be a image)
+#   height: "640px"         # Banner default height
+#   min_height: null        # Banner minimum height
+#   heading_style: null     # Custom heading style (e.g. "font-weight: bold; text-decoration: underline")
+#   subheading_style: null  # Custom subheading style (e.g. color: gold)
+
+# Excerpt size setting
+# excerpt_size: 350
+
+# Pagination setting
+# paginate: 5
+
+# Disqus comments
+# disqus:
+#   shortname: "Your Disqus username"
+
+# Gitment comments
+# gitment:
+#   username: "Your GitHub username"
+#   repo: "The repo to store comments"
+#   client_id: "Your client ID"
+#   client_secret: "Your client secret"
+#   redirect_uri: "Your redirect url"   # If you use a custom domain name
+
+# Utterances comments
+# See https://utteranc.es/
+# set follow_site_theme true to make utterances' theme follow the site's
+
+# utterances:
+#   repo: "owner/repo"
+#   issue_term: "title"
+#   label: "utterances comment"
+#   theme: "github-light"
+#   follow_site_theme: true
+
+# Build settings
+# highlighter: none
+markdown: kramdown
+kmarkdown:
+  input: GFM
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-spaceship

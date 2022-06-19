@@ -1,193 +1,200 @@
-# Grape-Academic-Theme
+<div align="center">
+  <br>
 
-<a href="https://jekyll-themes.com">
-    <img src="https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg" height="20" alt="Jekyll Themes Shield" loading="lazy">
-</a>
+  <a href="https://github.com/jeffreytse/jekyll-theme-yat">
+    <img alt="jekyll-theme-yat →~ jekyll" src="https://user-images.githubusercontent.com/9413601/106478481-346fdf00-64e4-11eb-9385-1ab5329c3234.png" width="600">
+  </a>
 
----
+  <h1>JEKYLL YAT THEME</h1>
 
-![home](https://chrjabs.github.io/Grape-Academic-Theme/assets/img/portfolio.png)
+</div>
 
-Welcome to Grape Academic Theme!
-This theme is based on [Grape Theme](https://github.com/naye0ng/Grape-Theme) and modifies it to be more directly applicable as an academic portfolio page.
-It can still include a blog, but that is optional.
+<h4 align="center">
+  <a href="https://jekyllrb.com/" target="_blank"><code>Jekyll</code></a> theme for elegant writers.
+</h4>
 
-[Demo](https://chrjabs.github.io/Grape-Academic-Theme)
+<p align="center">
+  <a href="https://jeffreytse.github.io/jekyll-theme-yat">
+    <img src="https://github.com/jeffreytse/jekyll-theme-yat/workflows/Github%20Pages/badge.svg"
+      alt="Github Pages" />
+  </a>
+
+  <a href="https://badge.fury.io/rb/jekyll-theme-yat">
+    <img src="https://badge.fury.io/rb/jekyll-theme-yat.svg"
+      alt="Gem Version" />
+  </a>
+
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg"
+      alt="License: MIT" />
+  </a>
+
+  <a href="https://liberapay.com/jeffreytse">
+    <img src="https://img.shields.io/liberapay/goal/jeffreytse.svg?logo=liberapay"
+      alt="Donate (Liberapay)" />
+  </a>
+
+  <a href="https://patreon.com/jeffreytse">
+    <img src="https://img.shields.io/badge/support-patreon-F96854.svg?style=flat-square"
+      alt="Donate (Patreon)" />
+  </a>
+
+  <a href="https://ko-fi.com/jeffreytse">
+  <img height="20" src="https://www.ko-fi.com/img/githubbutton_sm.svg"
+  alt="Donate (Ko-fi)" />
+  </a>
+</p>
+
+<div align="center">
+  <sub>Built with ❤︎ by
+  <a href="https://jeffreytse.net">jeffreytse</a> and
+  <a href="https://github.com/jeffreytse/jekyll-theme-yat/graphs/contributors">contributors </a>
+  </sub>
+</div>
+
+<br>
+
+Hey, nice to meet you, you found this [Jekyll][jekyll] theme. Here the
+_YAT (Yet Another Theme)_ is a modern responsive theme. It's quite
+clear, clean and neat for writers and posts. **If you are an elegant
+writer and focus on content, don't miss it.**
+
+<p align="center">
+Like this elegant theme? You can give it a star or sponsor me!<br>
+I will respect your crucial support and say THANK YOU!
+</p>
+
+<p align="center">
+
+  <img src="https://user-images.githubusercontent.com/9413601/91842897-6a840b00-ec87-11ea-95ca-52abcc1ac063.png" alt="demo-screenshot" width="100%"/>
+
+</p>
+
+<h4 align="center">BANNER</h4>
+
+<p align="center">
+
+  <img src="https://user-images.githubusercontent.com/9413601/123897812-ae729a00-d996-11eb-96b8-b76ba926f555.gif" alt="demo-screenshot" width="100%"/>
+
+</p>
+
+## Features
+
+- Support beautiful **Night Mode**.
+- Modern responsive web design.
+- Full layouts `home`, `post`, `tags`, `archive` and `about`.
+- Uses font awesome 5 for icons.
+- Beautiful page banner with image and video.
+- Beautiful Syntax Highlight using [highlight.js][highlight-js].
+- RSS support using [Jekyll Feed][jekyll-feed] gem.
+- Optimized for search engines using [Jekyll Seo Tag][jekyll-seo-tag] gem.
+- Sitemap support using [Jekyll Sitemap][jekyll-sitemap] gem.
+- Complex and flexible table support using [Jekyll Spaceship][jekyll-spaceship] gem.
+- MathJAX and LaTeX optional support using [Jekyll Spaceship][jekyll-spaceship] gem.
+- Media (Youtube, Spotify, etc.) support using [Jekyll Spaceship][jekyll-spaceship] gem.
+- Diagram (PlantUML, Mermaid) support using [Jekyll Spaceship][jekyll-spaceship] gem.
+- Google Translation support.
+- New post tag support.
+
+Also, visit the [Live Demo][yat-live-demo] site for the theme.
 
 ## Installation
 
-1. Fork and clone the Grape Academic Theme repo
+There are three ways to install:
 
-   ```
-   git clone https://github.com/chrjabs/Grape-Academic-Theme.git
-   ```
+- As a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes).
+- As a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) (GitHub Pages compatible).
+- Forking/directly copying all of the theme files into your project.
 
-2. Install Jekyll 
+### Gem-based Theme Method
 
-   ```
-   gem install jekyll
-   ```
+Add this line to your Jekyll site's `Gemfile`:
 
-3. Install the theme's dependencies
-
-   ```
-   bundle install
-   ```
-
-4. Update `_config.yml`, `_data/projects.yml`, `_data/projects.yml` and `_bibliography/publications.bib` with your own settings.
-
-5. Run the Jekyll server
-
-   ```
-   bundle exec jekyll serve
-   ```
-
-## Publishing
-
-Grape-Academic-Theme uses jekyll-scholar and therefore needs to manually be published to GitHub pages.
-A script for publishing on a `gh-pages` branch is included.
-Run `_scripts/publish.sh` from the main project directory and the page will be built, copied to the `gh-pages` branch and published.
-Make sure that GitHub pages is set up to publish that branch.
-If additional scripts should be executed in the HTML root, they can be placed in `_scripts/publish.d` and will be automatically executed.
-
-## Customizing
-
-Grape-Theme has two great features: the profile section and the project section of the portfolio page. Just by changing `_config.yml` and `projects.yml`, you can use all of these features.
-
-### Blog Settings
-
-The blog configuration is available in `_config.yml`.
-If you do not want to include a blog in your page, set `blog: False`.
-This will remove the navigation bar linking to the blog.
-
-### Favicon
-
-Generate your favicons with [realfavicongenerator.net](https://realfavicongenerator.net/) and place them in the root directory.
-The code to include them is already set up in the template.
-
-### Site configuration
-
-```
-baseurl: "{subpath}"
-
-theme_settings :
-  title: {blog title}
+```ruby
+gem "jekyll-theme-yat"
 ```
 
-### Profile Settings
+And add this line to your Jekyll site's `_config.yml`:
 
-Profile is displayed on the index page, and also experience and skills are displayed on the portfolio page.
-The profile is configured in `_data/profile.yml`.
-
-```
-image: assets/img/smile.png
-username: Christoph Jabs
-description: creator of the Grape-Academic-Theme! Grape-Academic-Theme is a modification of the Grape-Theme by naye0ng, making it more suitable as an academic portfolio.
-webpage: https://chrjabs.github.io
-experience:
-  - start: 2017-05-03
-    end: 2018-05-06
-    experience : company name, title
-interests:
-  - Interest 1
-  - Interest 2
-skills: 
-  - skill: HTML5 & CSS
-    value: 85  # Percent value
+```yaml
+theme: jekyll-theme-yat
 ```
 
-### Presentations
+And then execute:
 
-The data for the presentations page can be defined in `data/presentations.yml`.
-
-```
-- presentation:
-    title: A nice presentation
-    event: Fancy conference
-    date: 05/2022
-    comment: This is some comment text that can do _Markdown_
-    slides: https://www.google.com # potential link to slides
-- presentation:
-    title: A second presentation
-    event: Another conference
-    date: 03/2022
+```bash
+$ bundle
 ```
 
-### Pagination
+Or install it yourself as:
 
-Defines the number of posts to be shown on one page.
-
-```
-paginate: 5
+```bash
+$ gem install jekyll-theme-yat
 ```
 
-### Portfolio Settings
+### Remote Theme Method with GitHub Pages
 
-![home](https://chrjabs.github.io/Grape-Academic-Theme/assets/img/portfolio.png)
+Remote themes are similar to Gem-based themes, but do not require `Gemfile` changes or whitelisting making them ideal for sites hosted with GitHub Pages.
 
-The Project configuration is available in `_data/projects.yml`.
+To install:
 
-The portfolio page provides projects and detailed views by modal.
-If `modal : False` is selected, modal will not be displayed on site. 
+Add this line to your Jekyll site's `Gemfile`:
 
-- **print** : 
-  
-  - If `print: True` is selected, it will be displayed on landing page
-  
-- **modal** 
-  
-  - If `modal: True` is selected, modal will be displayed on the Portfolio page
-  
-    ![home](https://chrjabs.github.io/Grape-Academic-Theme/assets/img/modal.png)
-
-```
-print: True
-modal: True  
+```ruby
+gem "github-pages", group: :jekyll_plugins
 ```
 
-Add details(link, description) about your projects
+And add this line to your Jekyll site's `_config.yml`:
 
-```
-url: https://github.com/naye0ng/Grape-Theme # Full URL
-image: "portfolio.png" # path: assets/project/
-date: 2019.06.09 - 2019.07.11
-title: 
-summary: 
-description:  
-# modal contents
-contents:
-  - title:
-    image:      	    
-    description: 
+```yaml
+# theme: owner/name --> Don't forget to remove/comment the gem-based theme option
+remote_theme: "jeffreytse/jekyll-theme-yat"
 ```
 
-### Colors
+And then execute:
 
-You can change colors at once. colors are in `_sass/base/_variable.scss`
+```bash
+$ bundle
+```
 
-## Posts in Grape theme
+### GitHub Pages without limitation
 
-You can confirm how to draw tags at [here](https://grape-theme.netlify.com/2019/06/08/markdown-and-html.html) and [here](https://grape-theme.netlify.com/2019/06/09/grape-theme-style.html)
+GitHub Pages runs in `safe` mode and only allows [a set of whitelisted plugins/themes](https://pages.github.com/versions/). **In other words, the third-party gems will not work normally**.
 
-### Create a new post
+To use the third-party gem in GitHub Pages without limitation:
 
-1. Create a `.md` inside `_posts` folder
-   ```
-   2019-07-11-grape-theme.md
-   ```
+Here is a GitHub Action named [jekyll-deploy-action](https://github.com/jeffreytse/jekyll-deploy-action) for Jekyll site deployment conveniently. 👍
 
-2. Write the [Front Matter](https://jekyllrb.com/docs/front-matter/) and content in the file.
-   ```
-   ---
-   layout: post
-   title: title
-   subtitle : subtitle
-   tags: [tag1, tag2]
-   author: 
-   comments : 
-   ---
-   ```
+## Usage
 
-## Licence
+Add or update your available layouts, includes, sass and/or assets.
 
-The theme is available as open source under the terms of the [MIT Licence](https://opensource.org/licenses/MIT).
+## Development
+
+To set up your environment to develop this theme, run `bundle install`.
+
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+
+When your theme is released, only the files in `_data`, `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-yat.gemspec` accordingly.
+
+## Contributing
+
+Issues and Pull Requests are greatly appreciated. If you've never contributed to an open source project before I'm more than happy to walk you through how to create a pull request.
+
+You can start by [opening an issue](https://github.com/jeffreytse/jekyll-theme-yat/issues/new) describing the problem that you're looking to resolve and we'll go from there.
+
+## License
+
+This theme is licensed under the [MIT license](https://opensource.org/licenses/mit-license.php) © JeffreyTse.
+
+<!-- External links -->
+
+[jekyll]: https://jekyllrb.com/
+[yat-git-repo]: https://github.com/jeffreytse/jekyll-theme-yat/
+[yat-live-demo]: https://jeffreytse.github.io/jekyll-theme-yat/
+[jekyll-spaceship]: https://github.com/jeffreytse/jekyll-spaceship
+[jekyll-seo-tag]: https://github.com/jekyll/jekyll-seo-tag
+[jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
+[jekyll-feed]: https://github.com/jekyll/jekyll-feed
+[highlight-js]: https://github.com/highlightjs/highlight.js
