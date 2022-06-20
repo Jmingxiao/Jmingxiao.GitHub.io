@@ -7,9 +7,9 @@ home:
     volume: 0.8
     start_at: 8.0
     image: https://bit.ly/3xTmdUP
-    opacity: 1.0
+    opacity: 0.75
     background: "#000"
     height: "100vh"
     min_height: "38vh"
     heading_style: "font-size: 4.0em; font-weight: bold; text-decoration: underline"
-    subheading_style: "color: gold"
+    subheading_style: "color: #828282"
