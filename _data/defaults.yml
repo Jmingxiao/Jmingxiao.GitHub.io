@@ -7,7 +7,7 @@ home:
     volume: 0.8
     start_at: 8.0
     image: https://bit.ly/3xTmdUP
-    opacity: 0.618
+    opacity: 1.0
     background: "#000"
     height: "100vh"
     min_height: "38vh"
