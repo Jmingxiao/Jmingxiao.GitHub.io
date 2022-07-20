@@ -14,19 +14,6 @@ Welcome to visit my itch.io page: https://jmingxiao.itch.io/
 This website is mainly used to record some of my recent works. 
 
 
-
 欸嘿୧(﹒︠ᴗ﹒︡)୨
 
-    `;-.          ___,  
-      `.`\_...._/`.-"`
-        \        /      ,
-        /()   () \    .' `-._
-       |)  .    ()\  /   _.'
-       \  -'-     ,; '. <
-        ;.__     ,;|   > \
-       / ,    / ,  |.-'.-'
-      (_/    (_/ ,;|.<`
-        \    ,     ;-`
-         >   \    /
-        (_,-'`> .'
-             (_,'
+![Alt Text](intro/in.gif)
