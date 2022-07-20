@@ -10,10 +10,10 @@ This is a brief introduction.
 I am a game designer, developer and graphic programmer.
 Also a MSC student majored in interaction technology.  
 
-Welcome to visit my itch.io page: https://jmingxiao.itch.io/
+Welcome to visit my itch.io page: https://jmingxiao.itch.io/ .  
 This website is mainly used to record some of my recent works. 
 
 
 欸嘿୧(﹒︠ᴗ﹒︡)୨
 
-![](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg){: .center-block :}
+![](https://b-ssl.duitang.com/uploads/item/201601/10/20160110140049_aGwcd.thumb.700_0.gif){: .center-block :}
