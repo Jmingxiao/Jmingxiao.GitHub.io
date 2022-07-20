@@ -8,7 +8,7 @@ categories: MIng
 This is a brief introduction. 
 
 I am a game designer, developer and graphic programmer.
-Also a MSC student majored in interaction technology.  
+Also a MSc student majored in interaction technology.  
 
 Welcome to visit my itch.io page: https://jmingxiao.itch.io/ .  
 This website is mainly used to record some of my recent works. 
