@@ -16,4 +16,4 @@ This website is mainly used to record some of my recent works.
 
 欸嘿୧(﹒︠ᴗ﹒︡)୨
 
-![](https://b-ssl.duitang.com/uploads/item/201601/10/20160110140049_aGwcd.thumb.700_0.gif){: .center-block :}
+![](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif){: .center-block :}
