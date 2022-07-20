@@ -18,4 +18,4 @@ This website is mainly used to record some of my recent works.
 
 <center>
 
-![](https://b-ssl.duitang.com/uploads/item/201601/10/20160110140049_aGwcd.thumb.700_0.gif)
+![](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg){: .center-block :}
