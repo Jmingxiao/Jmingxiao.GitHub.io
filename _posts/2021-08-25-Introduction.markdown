@@ -16,6 +16,4 @@ This website is mainly used to record some of my recent works.
 
 欸嘿୧(﹒︠ᴗ﹒︡)୨
 
-<center>
-
 ![](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg){: .center-block :}
